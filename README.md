@@ -1,4 +1,4 @@
-# Blockchain-Based Document Verification System for Secure Job Recruitment
+# Secure Job Recruitment through Blockchain Document Verification 
 
 This project implements a **decentralized, tamper-proof solution** for verifying candidate documents during recruitment using **Ethereum smart contracts**, **MetaMask wallet integration**, **Node.js backend**, and a **MySQL database**.  
 It allows upload and verification of document hashes securely and maintains a transaction ledger for audit and accountability.
@@ -12,15 +12,11 @@ It allows upload and verification of document hashes securely and maintains a tr
 - MySQL database transaction ledger  
 - Simple, responsive frontend interface  
 
----
-
 ## Technologies Used
 - **Frontend:** JavaScript, Web3.js, CryptoJS, MetaMask, HTML, CSS  
 - **Backend:** Node.js, Express.js, MySQL, mysql2/promise  
 - **Blockchain:** Solidity, Truffle Suite, Ethereum (Sepolia Testnet / Alchemy)  
-- **Storage:** MySQL (transaction log), IPFS (optional document storage)  
-
----
+- **Storage:** MySQL (transaction log)
 
 ## Prerequisites
 - [Node.js & npm](https://nodejs.org/)  
@@ -30,7 +26,6 @@ It allows upload and verification of document hashes securely and maintains a tr
 - [Truffle Suite](https://trufflesuite.com/)  
 - [Alchemy](https://www.alchemy.com/) or Sepolia Testnet Access  
 
----
 
 ## Setup and Execution Guide
 
@@ -104,7 +99,7 @@ Fund your wallet with test ETH if needed.
 - View Ledger: The backend displays all uploads/verifications for audit.
 
 ## Folder Structure
-
+```
 JOB-RECRUITMENT-SYSTEM FINAL/
 │
 ├── .dist/
@@ -131,11 +126,12 @@ JOB-RECRUITMENT-SYSTEM FINAL/
 ├── package-lock.json
 ├── package.json
 └── truffle-config.js
+```
 ### References
-Ethereum Documentation
+- [Ethereum Documentation](https://ethereum.org/en/developers/docs/)  
+- [MetaMask Documentation](https://docs.metamask.io/)  
+- [Truffle Suite Documentation](https://trufflesuite.com/docs/)  
+- [MySQL Documentation](https://dev.mysql.com/doc/)  
+- [Alchemy Platform](https://www.alchemy.com/)  
 
-MetaMask Documentation
 
-Truffle Suite Documentation
-
-MySQL Documentation
