@@ -75,12 +75,12 @@ Backend will run at http://localhost:5000
 ```
 
 ### Setup Frontend
-Open the project folder in VS Code.
-Use the Live Server extension or any static server to host index.html in the frontend folder.
+- Open the project folder in VS Code.
+- Use the Live Server extension or any static server to host index.html in the frontend folder.
 
-### connect MetaMask
-Add Sepolia Testnet to MetaMask.
-Fund your wallet with test ETH if needed.
+### Connect MetaMask
+- Add Sepolia Testnet to MetaMask.
+- Fund your wallet with test ETH if needed.
 
 ### Run and Test the Application
 - Open the hosted frontend in your browser.
