@@ -1,0 +1,209 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background: url('https://i.pinimg.com/736x/49/eb/fd/49ebfd9e96bcd243a3926a210a2ff848.jpg') no-repeat center center fixed;
+  background-size: cover;
+}
+
+body {
+  min-height: 100vh;
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Center both containers and table nicely */
+.container {
+  width: 90%;
+  max-width: 1000px;
+  padding: 40px;
+  margin: 50px auto 0 auto;
+  background: rgba(197, 15, 15, 0.05);
+  backdrop-filter: blur(15px);
+  border-radius: 20px;
+  box-shadow: 0 0 15px 5px rgba(255, 12, 12, 0.6),
+              0 10px 40px rgba(255, 20, 20, 0.5);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.section-title {
+  font-size: 2.1em;
+  font-weight: 700;
+  color: #fff;
+  font-family: cursive;
+  text-align: center;
+  margin-bottom: 40px;
+  letter-spacing: 1px;
+  text-shadow: 0 0 15px #00fff4;
+}
+
+.flex-center {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+  width: 100%;
+}
+
+.card-section {
+  flex: 1 1 320px;
+  max-width: 350px;
+  background: rgba(255, 255, 255, 0.08);
+  padding: 30px;
+  border-radius: 20px;
+  backdrop-filter: blur(12px);
+  box-shadow: 0 8px 25px rgba(0, 255, 255, 0.2);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.card-section:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 35px rgba(0, 255, 255, 0.3);
+}
+
+.card-section h2 {
+  color: #00fff4;
+  margin-bottom: 25px;
+  font-size: 1.5em;
+  text-align: center;
+  text-shadow: 0 0 10px #00fff480;
+}
+
+.file-label {
+  color: #80ffe0;
+  font-weight: 600;
+  margin-bottom: 12px;
+  align-self: flex-start;
+}
+input[type="file"] {
+  width: 100%;
+  padding: 10px 12px;
+  border-radius: 10px;
+  border: 1.5px solid rgba(0,255,255,0.5);
+  background: rgba(255,255,255,0.03);
+  color: #fff;
+  margin-bottom: 20px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+input[type="file"]:hover {
+  background: rgba(255,255,255,0.06);
+}
+.main-action-btn {
+  width: 100%;
+  padding: 14px 0;
+  border: none;
+  border-radius: 12px;
+  background: linear-gradient(90deg, #00fff4, #00c0ff);
+  color: #0d1b1f;
+  font-weight: 700;
+  font-size: 1.1em;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 5px 15px rgba(0,255,255,0.3);
+}
+.main-action-btn:disabled {
+  background: rgba(0,255,255,0.2);
+  color: #99b7c9;
+  cursor: not-allowed;
+  box-shadow: none;
+}
+.main-action-btn:hover:not(:disabled) {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(0,255,255,0.5);
+}
+.status {
+  margin-top: 12px;
+  color: #fff;
+  text-align: center;
+  font-weight: 600;
+  font-family: 'century Gothic';
+  min-height: 18px;
+}
+#connectWalletBtn {
+  margin-top: 40px;
+  max-width: 380px;
+}
+
+/* -------- TRANSACTION LEDGER TABLE STYLING ---------- */
+
+h2[style*="Transaction Ledger"] {
+  margin-top: 40px;
+  color: #5e0000;
+  text-align: center;
+  font-size: 2.1em;
+  font-weight: 700;
+  font-family: cursive;
+  letter-spacing: 1px;
+  text-shadow: 0 0 15px #00fff4;
+}
+
+
+#ledgerContainer {
+  width: 96%;
+  max-width: 900px;
+  margin: 15px auto 30px auto; /* Top margin separates it from main container */
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 2px 18px rgba(0,0,0,0.22);
+  background: rgba(245,74,181,0.80);
+}
+
+#ledgerTable {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  table-layout: fixed;
+}
+
+#ledgerTable th {
+  background: #d3126b;
+  color: #fff;
+  font-size: 17px;
+  padding: 13px 10px;
+  text-align: left;
+}
+#ledgerTable td {
+  font-size: 15px;
+  padding: 11px 10px;
+  background: rgba(255, 192, 203, 0.55);
+  color: #2c003e;
+  word-break: break-all;
+}
+#ledgerTable tr:nth-child(even) td {
+  background: rgba(255, 229, 247, 0.7);
+}
+#ledgerTable tr:hover td {
+  background: #f575c5;
+  color: #fff;
+  transition: all 0.2s;
+}
+
+/* Responsive for tablet and mobile */
+@media (max-width: 800px) {
+  .flex-center {
+    flex-direction: column;
+    gap: 25px;
+  }
+  .card-section {
+    width: 90%;
+  }
+  #ledgerContainer {
+    width: 100%;
+    padding: 0;
+    border-radius: 8px;
+  }
+}
+@media (max-width: 650px) {
+  #ledgerTable th, #ledgerTable td {
+    font-size: 12px;
+    padding: 6px 4px;
+  }
+  #ledgerContainer {
+    max-width: 100%;
+  }
+}
