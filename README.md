@@ -34,27 +34,23 @@ It allows upload and verification of document hashes securely and maintains a tr
 
 ## Setup and Execution Guide
 
-### 1️⃣ Clone the Repository
+### Clone the Repository
 ```
 git clone <your-github-repo-url>
 cd <project-directory>
-'''
-2️⃣ Install Backend Dependencies
-bash
-Copy code
+ ```
+### Install Backend Dependencies
+```
 cd backend
 npm install
-3️⃣ Configure MySQL Database
+```
+### Configure MySQL Database
+```
 Start your MySQL server.
-
 Create the database and table:
 
-sql
-Copy code
 CREATE DATABASE job_verification;
-
 USE job_verification;
-
 CREATE TABLE transactions (
   id INT AUTO_INCREMENT PRIMARY KEY,
   type VARCHAR(20),
@@ -67,55 +63,48 @@ CREATE TABLE transactions (
   timestamp DATETIME DEFAULT CURRENT_TIMESTAMP
 );
 Update backend/server.js with your MySQL credentials.
-
-4️⃣ Compile and Deploy Smart Contract
-bash
-Copy code
-cd smart-contracts
+```
+### Compile and Deploy Smart Contract
+```
+cd contracts
 truffle compile
 truffle migrate --network sepolia
 Update your frontend with the contract address and ABI.
+```
 
-5️⃣ Start Backend Server
-bash
-Copy code
+### Start Backend Server
+```
 cd backend
 node server.js
 Backend will run at http://localhost:5000
+```
 
-6️⃣ Setup Frontend
+### Setup Frontend
 Open the project folder in VS Code.
-
 Use the Live Server extension or any static server to host index.html in the frontend folder.
 
-7️⃣ Connect MetaMask
+### connect MetaMask
 Add Sepolia Testnet to MetaMask.
-
 Fund your wallet with test ETH if needed.
 
-8️⃣ Run and Test the Application
-Open the hosted frontend in your browser.
+### Run and Test the Application
+- Open the hosted frontend in your browser.
+- Connect your MetaMask wallet when prompted.
+- Upload or verify a document.
+- Check ledger updates and blockchain transaction status.
+- Backend will store transaction logs; view them in MySQL for history/audit.
 
-Connect your MetaMask wallet when prompted.
+### Usage
+- Connect Wallet: Start the app and connect MetaMask to authenticate.
 
-Upload or verify a document.
+- Upload Document: Select a file; its hash is computed and sent to the blockchain.
 
-Check ledger updates and blockchain transaction status.
+- Verify Document: Select a file to check if its hash exists on the blockchain.
 
-Backend will store transaction logs; view them in MySQL for history/audit.
+- View Ledger: The backend displays all uploads/verifications for audit.
 
-Usage
-Connect Wallet: Start the app and connect MetaMask to authenticate.
+## Folder Structure
 
-Upload Document: Select a file; its hash is computed and sent to the blockchain.
-
-Verify Document: Select a file to check if its hash exists on the blockchain.
-
-View Ledger: The backend displays all uploads/verifications for audit.
-
-Folder Structure
-pgsql
-Copy code
 JOB-RECRUITMENT-SYSTEM FINAL/
 │
 ├── .dist/
@@ -142,7 +131,7 @@ JOB-RECRUITMENT-SYSTEM FINAL/
 ├── package-lock.json
 ├── package.json
 └── truffle-config.js
-References
+### References
 Ethereum Documentation
 
 MetaMask Documentation
