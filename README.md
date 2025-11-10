@@ -127,11 +127,12 @@ JOB-RECRUITMENT-SYSTEM FINAL/
 ├── package.json
 └── truffle-config.js
 ```
+## Documentation
+The detailed project report, including architecture, workflow, and SQL integration,
+is available at (./docs/Secure_Job_Recruitment_Report.pdf).
 ### References
 - [Ethereum Documentation](https://ethereum.org/en/developers/docs/)  
 - [MetaMask Documentation](https://docs.metamask.io/)  
 - [Truffle Suite Documentation](https://trufflesuite.com/docs/)  
 - [MySQL Documentation](https://dev.mysql.com/doc/)  
 - [Alchemy Platform](https://www.alchemy.com/)  
-
-
