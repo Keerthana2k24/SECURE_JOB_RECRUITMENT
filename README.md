@@ -129,7 +129,7 @@ JOB-RECRUITMENT-SYSTEM FINAL/
 ```
 ## Documentation
 The detailed project report, including architecture, workflow, and SQL integration,
-is available at (./Docs/Secure_Job_Recruitment_Report.pdf).
+is available at (./Documentation/Secure_Job_Recruitment_Report.pdf).
 ### References
 - [Ethereum Documentation](https://ethereum.org/en/developers/docs/)  
 - [MetaMask Documentation](https://docs.metamask.io/)  
